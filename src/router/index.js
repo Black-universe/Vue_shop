@@ -5,6 +5,8 @@ import Login from '../components/Login.vue'
 
 import Home from '../components/Home.vue'
 
+import Welcome from '../components/Welcome.vue'
+
 Vue.use(VueRouter)
 
 const routes = [{
@@ -19,7 +21,18 @@ const routes = [{
 {
   path: '/home',
   // name: 'Login',
-  component: Home
+  component: Home,
+  redirect: '/welcome',
+  children: [{
+    path: '/welcome',
+    component: Welcome
+  },
+  {
+    path: '/users',
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../components/user/users.vue')
+  }
+  ]
 }
   // {
   //       path: '/',
