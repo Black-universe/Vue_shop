@@ -15,22 +15,42 @@ const routes = [{
 },
 {
   path: '/login',
-  // name: 'Login',
+  name: 'Login',
   component: Login
 },
 {
   path: '/home',
-  // name: 'Login',
+  name: 'Login',
   component: Home,
   redirect: '/welcome',
   children: [{
     path: '/welcome',
+    name: 'Welcome',
     component: Welcome
   },
   {
     path: '/users',
+    name: 'Users',
     component: () =>
       import(/* webpackChunkName: "about" */ '../components/user/users.vue')
+  },
+  {
+    path: '/rights',
+    name: 'Rights',
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */
+        '../components/power/Rights.vue'
+      )
+  },
+  {
+    path: '/roles',
+    name: 'Roles',
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */
+        '../components/power/Roles.vue'
+      )
   }
   ]
 }
