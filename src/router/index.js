@@ -32,14 +32,14 @@ const routes = [{
     path: '/users',
     name: 'Users',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../components/user/users.vue')
+      import(/* webpackChunkName: "Users" */ '../components/user/users.vue')
   },
   {
     path: '/rights',
     name: 'Rights',
     component: () =>
       import(
-        /* webpackChunkName: "about" */
+        /* webpackChunkName: "Rights" */
         '../components/power/Rights.vue'
       )
   },
@@ -48,8 +48,17 @@ const routes = [{
     name: 'Roles',
     component: () =>
       import(
-        /* webpackChunkName: "about" */
+        /* webpackChunkName: "Roles" */
         '../components/power/Roles.vue'
+      )
+  },
+  {
+    path: '/categories',
+    name: 'Categories',
+    component: () =>
+      import(
+        /* webpackChunkName: "Categories" */
+        '../components/goods/Cate.vue'
       )
   }
   ]

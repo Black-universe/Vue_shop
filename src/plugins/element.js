@@ -28,7 +28,8 @@ import {
   Tag,
   Tree,
   Option,
-  Select
+  Select,
+  Cascader
 } from 'element-ui'
 
 /* 消息弹窗 */
@@ -61,6 +62,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Option)
 Vue.use(Select)
+Vue.use(Cascader)
 // Vue.use(Header)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
