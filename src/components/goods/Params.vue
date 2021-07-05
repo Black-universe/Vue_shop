@@ -21,7 +21,9 @@
             :options="cateList"
             :props="cateProps"
             @change="handleChange"
-
+   clearable
+            filterable
+            change-on-select
           ></el-cascader>
         </el-col>
       </el-row>

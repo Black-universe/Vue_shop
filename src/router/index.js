@@ -69,6 +69,24 @@ const routes = [{
         /* webpackChunkName: "Categories" */
         '../components/goods/Params.vue'
       )
+  },
+  {
+    path: '/goods',
+    name: 'Goods',
+    component: () =>
+      import(
+        /* webpackChunkName: "Categories" */
+        '../components/goods/List.vue'
+      )
+  },
+  {
+    path: '/goods/add',
+    name: 'Add',
+    component: () =>
+      import(
+        /* webpackChunkName: "Categories" */
+        '../components/goods/Add.vue'
+      )
   }
   ]
 }
