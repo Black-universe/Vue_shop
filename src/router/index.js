@@ -20,7 +20,7 @@ const routes = [{
 },
 {
   path: '/home',
-  name: 'Login',
+  name: 'Home',
   component: Home,
   redirect: '/welcome',
   children: [{
@@ -66,7 +66,7 @@ const routes = [{
     name: 'Params',
     component: () =>
       import(
-        /* webpackChunkName: "Categories" */
+        /* webpackChunkName: "Params" */
         '../components/goods/Params.vue'
       )
   },
@@ -75,7 +75,7 @@ const routes = [{
     name: 'Goods',
     component: () =>
       import(
-        /* webpackChunkName: "Categories" */
+        /* webpackChunkName: "Goods" */
         '../components/goods/List.vue'
       )
   },
@@ -84,7 +84,7 @@ const routes = [{
     name: 'Add',
     component: () =>
       import(
-        /* webpackChunkName: "Categories" */
+        /* webpackChunkName: "Add" */
         '../components/goods/Add.vue'
       )
   },
@@ -93,8 +93,17 @@ const routes = [{
     name: 'Order',
     component: () =>
       import(
-
+        /* webpackChunkName: "Order" */
         '../components/order/order.vue'
+      )
+  },
+  {
+    path: '/reports',
+    name: 'Reports',
+    component: () =>
+      import(
+        /* webpackChunkName: "Reports" */
+        '../components/report/report.vue'
       )
   }
   ]
