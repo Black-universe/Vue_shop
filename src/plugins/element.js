@@ -37,11 +37,10 @@ import {
   Steps,
   Checkbox,
   CheckboxGroup,
-  Upload,
-  Timeline,
-  TimelineItem
+  Upload
 } from 'element-ui'
-
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
 /* 消息弹窗 */
 // import { Message } from 'element-ui'
 

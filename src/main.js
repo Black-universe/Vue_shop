@@ -41,8 +41,8 @@ Vue.filter('dataFormat', function (originVal) {
   return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
 })
 // axios.defaults.baseURL = "https://www.liulongbin.top:8888/api/private/v1/ "
-// axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/upload'
-axios.defaults.baseURL = 'http://www.ysqorz.top:8888/api/private/v1/'
+axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
+// axios.defaults.baseURL = 'http://www.ysqorz.top:8888/api/private/v1/'
 axios.interceptors.request.use(config => {
   // console.log(config)
   config.headers.Authorization = window.sessionStorage.getItem('token')
